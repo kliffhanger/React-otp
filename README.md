@@ -28,3 +28,21 @@ export default {
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+# Docker Files added
+ - Commands to run the docker files
+    - docker build -t [image-name] .  //creates the image
+    - docker run --name [container-name] -p 5173:5173 -d [image-name]  //starts the container
+    - docker stop [container-name]
+    - docker ps -a    //displays all the containers
+    - docker container prune   //removes all the stopped containers 
+
+# Testing Files and Dependencies
+  - Library used
+    - vitest 
+    - jsdom
+    - react testing library
+  - Cmds
+    - npm i -D vitest
+    - npm i -D jsdom @testing-library/react @testing-library/jest-dom
