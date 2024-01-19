@@ -46,3 +46,9 @@ export default {
   - Cmds
     - npm i -D vitest
     - npm i -D jsdom @testing-library/react @testing-library/jest-dom
+  - Edit
+    - vite.config.ts file with below code
+    - tsconfig.json file with a line - "types": ["vitest/globals"],
+    - package.json add "test": "vitest" in scripts
+  - References
+    - https://github.com/vitest-dev/vitest/tree/main/examples/react-testing-lib
