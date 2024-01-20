@@ -28,8 +28,8 @@ function App() {
       {otpForm ? <OtpForm/>: <section>
         <form onSubmit={handleNumberSubmit}>
           
-          <input ref={numberRef} type='text' id='inputNumber' onChange={handleNumberCheck} maxLength={10} minLength={10} placeholder='enter phone number' value={inputCustomerNumber}/>
-          <button type='submit' id='submitbtn'>Submit</button>
+          <input ref={numberRef} type='text' id='inputNumber' onChange={handleNumberCheck} maxLength={10} minLength={10} placeholder='enter phone number' value={inputCustomerNumber} />
+          <button type='submit' data-testid='submitbtn'>Submit</button>
         </form>
       </section>}
     </>
